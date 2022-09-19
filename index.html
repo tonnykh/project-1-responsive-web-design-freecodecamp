@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+  <form id="survey-form">
+    
+    <fieldset>
+    <label id="name-label">
+    <input id="name" type="text" required placeholder="Enter your name">Name </input>
+    </label>
+    <label id="email-label">
+    <input id="email" type="email" required placeholder="Enter your email">Email</input>
+    </label>
+    <label id="number-label">
+    <input id="number" type="number" required min="13" max="120" placeholder="Age">Age(optional)
+    </label>
+    </fieldset>
+
+
+    <fieldset>
+    <label>Which option best describes your current role?
+      <select id="dropdown">
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer not to say</option>
+        <option>other</option>
+      </select>
+    </label>
+    </fieldset>
+
+
+    <fieldset>
+ <p>Would you recommend freeCodeCamp to a friend?</p>
+  <label><input type="radio" value="definitely" name="recommended-type">Definitely</input></label>
+  <label><input type="radio" value="maybe" name="recommended-type">Maybe</input></label>
+  <label><input type="radio" value="not sure" name="recommended-type">Not sure</input></label>
+    </fieldset>
+
+
+    <fieldset>
+      <p>What would you like to see improved? (Check all that apply)</p>
+<label><input type="checkbox" value="front-end">Front-end Projects</input></label>
+<label><input type="checkbox" value="back-end">Back-end Projects</input></label>
+<label><input type="checkbox" value="challenges">Challenges</input></label>
+<label><input type="checkbox" value="additional courses">Additional Courses</input></label>
+    </fieldset>
+
+    <fieldset>
+      <p>Any comments or suggestions?</p>
+      <textarea></textarea>
+    </fieldset>
+
+    <input type="submit" id="submit"></input>
+
+  </form>
+</body>
+
+</html>
